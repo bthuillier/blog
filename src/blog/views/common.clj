@@ -6,7 +6,9 @@
             (html5
               [:head
                [:title "blog"]
-               (include-css "/css/reset.css")]
+               (include-css "/css/bootstrap.min.css")
+               (include-css "/css/bootstrap-responsive.min.css")
+               [:meta { :name "viewport" :content "width=device-width, initial-scale=1.0" }]]
               [:body
-               [:div#wrapper
+               [:div.container-fluid
                 content]]))
