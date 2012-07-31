@@ -1,6 +1,6 @@
 (ns blog.views.common
   (:use [noir.core :only [defpartial]]
-        [hiccup.page-helpers :only [include-css html5]]))
+        [hiccup.page-helpers :only [include-js include-css html5]]))
 
 (defpartial layout [& content]
             (html5
@@ -12,4 +12,6 @@
                [:div#main.container-fluid
                 [:div.row-fluid
                  [:div.span12 content
-               ]]]]))
+               ]]]
+               (include-js "/js/jquery.min.js")
+               (include-js "/js/bootstrap.min.js")]))
