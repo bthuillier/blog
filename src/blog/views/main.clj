@@ -5,7 +5,6 @@
         [hiccup.core :only [html]]))
 
 (defpage "/" []
-         (common/layout
-           navbar/generate-default [:p "Welcome to blog"]))
+  (common/default-layout [:p "Welcome to blog"]))
 
 
