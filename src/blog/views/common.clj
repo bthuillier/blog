@@ -2,25 +2,6 @@
   (:use [noir.core :only [defpartial]]
         [hiccup.page-helpers :only [include-js include-css html5]]))
 
-
-(defpartial nav-menu-item [{:keys [url title]}]
-  [:li [:a {:href url} title]])
-
-
-(defpartial nav-menu [items]
-  [:ul.nav
-    (map nav-menu-item items)])
-
-
-(defpartial navbar [& content]
-[:div { :class "navbar navbar-fixed-top" }
-				[:div.navbar-inner
-		 		 [:div.container-fluid content]]]
-	)
-
-
-
-
 (defpartial layout [nav content]
             (html5
               [:head
@@ -28,7 +9,7 @@
                (include-css "/css/main.css")
                [:meta { :name "viewport" :content "width=device-width, initial-scale=1.0" }]]
               [:body
-			   (nav )
+			         (nav)
                [:div#main.container-fluid
                 [:div.row-fluid
                  [:div.span12 content
