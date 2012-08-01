@@ -3,9 +3,6 @@
   (:use [noir.core :only [defpartial]]
         [hiccup.page-helpers :only [include-js include-css html5]]))
 
-(defpartial default-layout [ & content]
-  (layout navbar/generate-default content))
-
 (defpartial layout [nav content]
             (html5
               [:head
@@ -20,6 +17,9 @@
                ]]]
                (include-js "/js/jquery.min.js")
                (include-js "/js/bootstrap.min.js")]))
+
+(defpartial default-layout [ & content]
+  (layout navbar/generate-default content))
 
 (defpartial article []
   layout )

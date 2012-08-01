@@ -7,4 +7,11 @@
 (defpage "/" []
   (common/default-layout [:p "Welcome to blog"]))
 
+(defpage "/status" []
+  (common/default-layout [:p "Welcome to blog"]))
+
+(defpage "/about" []
+  (common/default-layout [:p "Welcome to blog"]))
+
+
 
