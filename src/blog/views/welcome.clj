@@ -1,8 +1,13 @@
 (ns blog.views.welcome
   (:require [blog.views.common :as common])
-  (:use [noir.core :only [defpage]]
+  (:use [noir.core :only [defpage defpartial]]
         [hiccup.core :only [html]]))
 
-(defpage "/welcome" []
+(defpartial navbar []
+	(common/navbar (common/nav-menu [{:url "lol"  :title "test"} {:url "/archives" :title "archives"} {:url "/about" :title "about"}])))
+
+(defpage "/" []
          (common/layout
-           [:p "Welcome to blog"]))
+           navbar [:p "Welcome to blog"]))
+
+

@@ -2,25 +2,40 @@
   (:use [noir.core :only [defpartial]]
         [hiccup.page-helpers :only [include-js include-css html5]]))
 
-(defpartial navbar []
+
+(defpartial nav-menu-item [{:keys [url title]}]
+  [:li [:a {:href url} title]])
+
+
+(defpartial nav-menu [items]
+  [:ul.nav
+    (map nav-menu-item items)])
+
+
+(defpartial navbar [& content]
 [:div { :class "navbar navbar-fixed-top" }
 				[:div.navbar-inner
-		 		 [:div.container-fluid]]]
+		 		 [:div.container-fluid content]]]
 	)
 
 
-(defpartial layout [& content]
+
+
+(defpartial layout [nav content]
             (html5
               [:head
                [:title "blog"]
                (include-css "/css/main.css")
                [:meta { :name "viewport" :content "width=device-width, initial-scale=1.0" }]]
               [:body
-			   (navbar)
+			   (nav )
                [:div#main.container-fluid
                 [:div.row-fluid
                  [:div.span12 content
                ]]]
                (include-js "/js/jquery.min.js")
                (include-js "/js/bootstrap.min.js")]))
+
+(defpartial article []
+  layout )
 
