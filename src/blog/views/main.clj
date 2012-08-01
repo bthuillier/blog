@@ -5,13 +5,13 @@
         [hiccup.core :only [html]]))
 
 (defpage "/" []
-  (common/default-layout [:p "Welcome to blog"]))
+  (common/default-layout [:p "Welcome to blog"] "homepage"))
 
 (defpage "/status" []
-  (common/default-layout [:p "Welcome to blog"]))
+  (common/default-layout [:p "Welcome to blog"] "status page"))
 
 (defpage "/about" []
-  (common/default-layout [:p "Welcome to blog"]))
+  (common/default-layout [:p "Welcome to blog"] "about page"))
 
 
 

@@ -12,10 +12,10 @@
 (def base-javascripts["/js/jquery.min.js" "/js/bootstrap.min.js"])
 (def base-stylesheets["/css/main.css"])
 
-(defpartial layout [nav content]
+(defpartial layout [nav content & {:keys [title] :or {title "blog"}}]
             (html5
               [:head
-               [:title "blog"]
+               [:title title]
                (include-stylesheets base-stylesheets)
                [:meta { :name "viewport" :content "width=device-width, initial-scale=1.0" }]]
               [:body
@@ -28,8 +28,8 @@
 
 
 
-(defpartial default-layout [ & content]
-  (layout navbar/generate-default content))
+(defpartial default-layout [content title]
+  (layout navbar/generate-default content :title title))
 
 (defpartial article []
   layout )

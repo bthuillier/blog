@@ -4,9 +4,9 @@
         [hiccup.core :only [html]]))
 
 (defpage "/archives" []
-	(common/default-layout [:p "archives"]))
+	(common/default-layout [:p "archives"] "archives"))
 
 
 (defpage "/article/this-is-sparta" []
-	(common/default-layout [:p "article"]
+	(common/default-layout [:p "article"] "article"
 		))
