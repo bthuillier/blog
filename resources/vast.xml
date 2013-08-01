@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<VAST version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Ad id="1546">
+  <InLine>
+    <AdSystem>Teads Technology</AdSystem><AdTitle><![CDATA[1307 - Cognizant]]></AdTitle>
+    <Impression><![CDATA[http://t.teads.tv/track?action=impression&vid=326576188bdb15ce464e1b918f10183baaef6463&gid=2335&pid=0&1375368129933]]></Impression>
+    <Creatives>
+      <Creative id="2002">
+        <Linear>
+          <Duration>00:00:29</Duration>
+          <TrackingEvents>
+            <Tracking event="start"><![CDATA[http://t.teads.tv/track?action=start&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="firstQuartile"><![CDATA[http://t.teads.tv/track?action=firstQuartile&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="midpoint"><![CDATA[http://t.teads.tv/track?action=midpoint&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="thirdQuartile"><![CDATA[http://t.teads.tv/track?action=thirdQuartile&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="complete"><![CDATA[http://t.teads.tv/track?action=complete&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="pause"><![CDATA[http://t.teads.tv/track?action=pause&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="resume"><![CDATA[http://t.teads.tv/track?action=resume&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="mute"><![CDATA[http://t.teads.tv/track?action=mute&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="unmute"><![CDATA[http://t.teads.tv/track?action=unmute&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="expand"><![CDATA[http://t.teads.tv/track?action=expand&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="collapse"><![CDATA[http://t.teads.tv/track?action=collapse&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="skip"><![CDATA[http://t.teads.tv/track?action=skip&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="rewind"><![CDATA[http://t.teads.tv/track?action=rewind&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></Tracking>
+            <Tracking event="complete"><![CDATA[http://ad.doubleclick.net/ad/N5371.1744851.ONECENTRALPOINT.CO/B7798534.32;sz=1x1;ord=[timestamp]?]]></Tracking>
+          </TrackingEvents>
+          <VideoClicks>
+            <ClickThrough><![CDATA[http://www.cognizant.com?utm_source=OCP_z24_NL&utm_medium=Display&utm_term=100973813&utm_content=55218026&utm_campaign=eu_OMD_Q313INTL]]></ClickThrough>
+            <ClickTracking><![CDATA[http://t.teads.tv/track?action=click&vid=326576188bdb15ce464e1b918f10183baaef6463&cid=2002&gid=2335&pid=0&1375368129933]]></ClickTracking>
+          </VideoClicks>
+          <MediaFiles>
+            <MediaFile bitrate="1477" height="540" type="video/mp4" delivery="streaming" width="960"><![CDATA[http://cdn2.teads.tv/1/2002_04233b1c3c56e75adec0753b0e90940e_A640p.mp4]]></MediaFile>
+          </MediaFiles>
+        </Linear>
+      </Creative>
+    </Creatives>
+  </InLine>
+</Ad>
+</VAST>
